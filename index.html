@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boin Routine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 1px; /* Gap between cells to create borders */
+      }
+
+      .grid-item {
+        padding: 10px;
+        border: 1px solid #e9dddd;
+        text-align: center;
+      }
+
+      /* Styling for the header row */
+      .grid-item:nth-child(-n + 8) {
+        background-color: #3498db;
+        color: #fff;
+      }
+
+      /* Styling for the first column */
+      .grid-item:nth-child(8n + 1) {
+        background-color: #2ecc71;
+        color: #fff;
+      }
+      .time_day {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid-container">
+        <!-- Header row -->
+        <div class="grid-item"><span class="time_day">Time/Day</span></div>
+        <div class="grid-item">9 - 10 am</div>
+        <div class="grid-item">10 - 11 am</div>
+        <div class="grid-item">11 - 11:50 am</div>
+        <div class="grid-item">12:10 - 1 pm</div>
+        <div class="grid-item">2 - 3 pm</div>
+        <div class="grid-item">3 - 4 pm</div>
+        <div class="grid-item">4 - 5 pm</div>
+
+        <!-- Content rows -->
+        <!-- Add more grid items for content as needed -->
+        <div class="grid-item">Monday</div>
+        <div class="grid-item"></div>
+        <div class="grid-item">SD</div>
+        <div class="grid-item">KP</div>
+        <div class="grid-item">SB</div>
+        <div class="grid-item">PGo</div>
+        <div class="grid-item">DD</div>
+        <div class="grid-item"></div>
+        <div class="grid-item">Tuesday</div>
+        <div class="grid-item">SMG</div>
+        <div class="grid-item">SG</div>
+        <div class="grid-item">SB</div>
+        <div class="grid-item">PGo</div>
+        <div class="grid-item">KP</div>
+        <div class="grid-item">DM</div>
+        <div class="grid-item"></div>
+        <div class="grid-item">Wednesday</div>
+        <div class="grid-item">DM</div>
+        <div class="grid-item">SD</div>
+        <div class="grid-item">SG</div>
+        <div class="grid-item">BM</div>
+        <div class="grid-item">SMG</div>
+        <div class="grid-item">PGo</div>
+        <div class="grid-item"></div>
+        <div class="grid-item">Thursday</div>
+        <div class="grid-item">SG</div>
+        <div class="grid-item">SD</div>
+        <div class="grid-item">PGo</div>
+        <div class="grid-item">KP</div>
+        <div class="grid-item">SMG</div>
+        <div class="grid-item">DM</div>
+        <div class="grid-item">DM</div>
+        <div class="grid-item">Friday</div>
+        <div class="grid-item">SMG</div>
+        <div class="grid-item">KP</div>
+        <div class="grid-item">BM</div>
+        <div class="grid-item">DM</div>
+        <div class="grid-item">SB</div>
+        <div class="grid-item">DD</div>
+        <div class="grid-item"></div>
+      </div>
+    </div>
+  </body>
+</html>
